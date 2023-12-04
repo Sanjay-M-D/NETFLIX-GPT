@@ -1,18 +1,17 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
+import { USER_AVATAR, NETFLIX_BG_IMG } from "../utils/contants";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
 const Login = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMeassage] = useState(null);
@@ -44,7 +43,7 @@ const Login = () => {
           // Updating the userProfile with "name"
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/139953317?v=4",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -56,7 +55,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               setErrorMeassage(error.message);
@@ -78,8 +76,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user);
-          // Navigting to Browse Page...
-          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -93,10 +89,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/c906271d-7184-4eec-83c9-b6d4c1a068ec/728874a6-eeda-400a-9bcf-a935a1408a4f/IN-en-20231127-popsignuptwoweeks-perspective_alpha_website_large.jpg"
-          alt="background-img"
-        />
+        <img alt="background-img" src={NETFLIX_BG_IMG} />
       </div>
 
       <form
