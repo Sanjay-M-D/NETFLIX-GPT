@@ -37,7 +37,6 @@ const Browse = () => {
              - MovieLists * n
              - Cards * n
       */}
-      Browse
     </div>
   );
 };
