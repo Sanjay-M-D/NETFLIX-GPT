@@ -40,7 +40,7 @@ const Login = () => {
         .then((userCredential) => {
           const user = userCredential.user;
           console.log(user);
-          // Updating the userProfile with "name"
+          // Updating the userProfile with "name" and "photoUrl"
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
             photoURL: USER_AVATAR,

@@ -28,3 +28,5 @@ export const SUPPORTES_LANGUAGES = [
   { identifier: "french", name: "French" },
   { identifier: "turkish", name: "Turkish" },
 ];
+
+export const OPENAI_KEY = "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";

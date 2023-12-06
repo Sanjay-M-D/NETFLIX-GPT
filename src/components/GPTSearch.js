@@ -6,7 +6,7 @@ import { NETFLIX_BG_IMG } from "../utils/contants";
 const GPTSearch = () => {
   return (
     <div>
-      <div className="absolute -z-10">
+      <div className="fixed -z-10">
         <img alt="background-img" src={NETFLIX_BG_IMG} />
       </div>
       <GptSearchBar />
