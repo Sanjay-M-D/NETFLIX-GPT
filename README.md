@@ -1,25 +1,4 @@
-# NETFLIX-GPT
-
-- Create React App
-- Configured Tailwind Css
-- Header
-- Routing of App
-- Login Form
-- Sign up Form
-- Form Validation
-- useRef Hook
-- Firebase setup
-- Deploying app to production
-- Create SignUp User Account
-- Implemented Sign In user API
-- Created Redux Store with UserSlice
-- Implemented SignOut
-- Updated User Profile
-- Add hardCoded data into Constants file
-- Register TMDB API and create an App and get the Access Token
-- Get data from TMDB now playing movies list API
-
-# Features (AppLayout)
+# NETFLIX-GPT Features (AppLayout)
 
 - Login/Signup Page
 
@@ -39,6 +18,53 @@
 
   - Search Bar
   - Movie Suggestions
+
+# NETFLIX-GPT Project WorkFlow
+
+- Create React App
+- Configured Tailwind Css
+- Header
+- Routing of App
+- Login Form
+- Sign up Form
+- Form Validation
+- useRef Hook
+- Firebase setup
+- Deploying app to production
+- Create SignUp User Account
+- Implemented Sign In user API
+- Created Redux Store with UserSlice
+- Implemented SignOut
+- Updated User Profile
+- Add hardCoded data into Constants file
+- Register TMDB API and create an App and get the Access Token
+- Get data from TMDB now playing movies list API
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update Store with movies Data
+- Planning for MainContauiner & secondary container
+- Fetch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Yotube video and make it autoplay and mute
+- Tailwind Classes to make Main Container look awesome
+- Build Secondary Component
+- Build Movie List
+- build Movie Card
+- TMDB Image CDN URL
+- Made the Browsre page amazing with Tailwind CSS
+- usePopularMovies Custom hook
+- GPT Search Page
+- GPT Search Bar
+- Multi-language Feature in our App
+- Get Open AI Api Key
+- Gpt Search API Call
+- fetched gptMoviesSuggestions from TMDB
+- created gptSlice added data
+- Resused Movie List component to make movie suggestion container
+- Memoization
+- Added .env file
+- Adding .env file to gitignore
+- Made our Site Responsive
 
 # Steps for Deployment in Firebase
 
