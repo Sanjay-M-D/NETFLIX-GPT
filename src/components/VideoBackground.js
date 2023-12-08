@@ -2,8 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 import useMovieTrailer from "../hooks/useMovieTrailer";
 
-const VedioBackground = ({ movieId }) => {
-  const trailerVedio = useSelector((store) => store.movies.trailerVedio);
+const VideoBackground = ({ movieId }) => {
+  const trailerVideo = useSelector((store) => store.movies.trailerVideo);
 
   useMovieTrailer(movieId);
 
@@ -13,7 +13,7 @@ const VedioBackground = ({ movieId }) => {
         className=" w-screen aspect-video"
         src={
           "https://www.youtube.com/embed/" +
-          trailerVedio?.key +
+          trailerVideo?.key +
           "?autoplay=1&mute=1"
         }
         title="YouTube video player"
@@ -23,4 +23,4 @@ const VedioBackground = ({ movieId }) => {
   );
 };
 
-export default VedioBackground;
+export default VideoBackground;
